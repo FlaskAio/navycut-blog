@@ -1,0 +1,7 @@
+#formhead{
+    text-align: center;
+}
+.contact::before{
+    height: 129%;
+    border-radius: 45px;
+}

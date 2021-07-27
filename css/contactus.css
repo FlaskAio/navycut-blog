@@ -1,0 +1,20 @@
+.contact{
+    display: flex; 
+    justify-content: center;
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    margin-top: -75px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+.contact::before{
+    content: "";
+    background:url(../images/contactus.jpg);
+    border-radius: 105px;
+    position: absolute;
+    width: 80%;
+    height: 104%;
+    z-index: -1;
+    opacity: 1.8;
+}

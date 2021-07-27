@@ -1,0 +1,22 @@
+/* Navigation Bar */
+#navbar ul{
+    flex-direction: column;
+}
+#navbar ul li{
+    margin-top: 3px;
+}
+
+#mid{
+    margin-bottom: 50px;
+    height: 396px;
+}
+#mid h1{
+    margin-top: 285px;
+}
+#mid div{
+    margin-top: -10px;
+}
+#btn{
+    margin: 8px 0px;
+    margin-bottom: 45px;
+}
