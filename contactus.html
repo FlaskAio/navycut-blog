@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 865px)" href="css/responsive.css">
+    <link rel="stylesheet" media="screen and (max-width: 583px)" href="css/phone.css">
+    <link rel="stylesheet" href="css/doc.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" media="screen and (max-width: 855px)" href="css/contactusresponsive.css">
+    <link rel="stylesheet" media="screen and (max-width: 581px)" href="css/contactphone.css">
+</head>
+
+<body style="overflow-x: hidden;">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo.jpg" alt="no logo">
+        </div>
+        <ul>
+            <li class="bar"><a href="index.html" id="navhome" onclick="navhome()">Home</a></li>
+            <li class="bar"><a href="documentations.html"  id="navdocs" onclick="navdocs()">Documentations</a></li>
+            <li class="bar"><a href="news.html" id="navnews" onclick="navnews()">News or updates</a></li>
+            <li class="bar"><a href="codes.html" id="navcode" onclick="navcodes()">Codes</a></li>
+            <li class="bar"><a href="aboutus.html" id="navabout" onclick="navabout()">About us</a></li>
+            <li class="bar"><a href="contactus.html" id="navcontact" onclick="navcontact()">Contact us</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div style="width: 85%; margin: auto;">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="images/logo.jpg" alt="" width="72" height="57">
+        <h2>Contact us</h2>
+        <p class="lead">You can simply contact us from filling this form given below and if you have any question and problem you can simply send us mail</p>
+      </div>
+    </div>
+      <div class="contact">
+        <div class="col-md-7 col-lg-8" style="margin-top: 16px;">
+          <h4 class="mb-3" id="formhead">Fill the form</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                <div class="invalid-feedback">
+                    Your username is required.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              </div>
+  
+              <div class="col-md-5">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <label for="state" class="form-label">State</label>
+                <input type="text" class="form-control" id="state" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Pin no</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Pin no required.
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">You read carefully our terms and conditions</label>
+            </div>
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Save this information for next time</label>
+            </div>
+  
+            <hr class="my-4">
+            <button type="button" class="btn btn-primary container">Submit</button>
+      </div>
+    </div>
+
+      <footer class="bg-dark pt-5" style="width: 100%; margin-top: 10px;">
+        <div class="container">
+          <!-- About and Newsletter START -->
+          <div class="row pt-3 pb-4">
+            <div class="col-md-3">
+              <img src="images/logo.jpg" style=" width: 40px;
+              height: 40px;
+              border-radius: 100px;" alt="footer logo">
+            </div>
+            <div class="col-md-5">
+              <p class="text-muted">The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.</p>
+            </div>
+            <div class="col-md-4">
+              <!-- Form -->
+              <form class="row row-cols-lg-auto g-2 align-items-center justify-content-end">
+                <div class="col-12">
+                  <input type="email" class="form-control" placeholder="Enter your email address">
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary m-0">Subscribe</button>
+                </div>
+                <div class="form-text mt-2">By subscribing you agree to our 
+                  <a href="#" class="text-decoration-underline text-reset">Privacy Policy</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- About and Newsletter END -->
+      
+          <!-- Divider -->
+          <hr>
+      
+          <!-- Widgets START -->
+          <div class="row pt-5">
+            <!-- Footer Widget -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <h5 class="mb-4 text-white">Recent post</h5>
+              <!-- Item -->
+              <div class="mb-4 position-relative">
+                <div><a href="#" class="badge bg-danger mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Business</a></div>
+                <a href="post-single-3.html" class="btn-link text-white fw-normal">Up-coming business bloggers, you need to watch</a>
+                <ul class="nav nav-divider align-items-center small mt-2 text-muted">
+                  <li class="nav-item position-relative">
+                    <div class="nav-link">by <a href="#" class="stretched-link text-reset btn-link">Dennis</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">Apr 06, 2021</li>
+                </ul>
+              </div>
+              <!-- Item -->
+              <div class="mb-4 position-relative">
+                <div><a href="#" class="badge bg-info mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Marketing</a></div>
+                <a href="post-single-3.html" class="btn-link text-white fw-normal">How did we get here? The history of the business told through tweets</a>
+                <ul class="nav nav-divider align-items-center small mt-2 text-muted">
+                  <li class="nav-item position-relative">
+                    <div class="nav-link">by <a href="#" class="stretched-link text-reset btn-link">Larry</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">May 29, 2021</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Footer Widget -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <h5 class="mb-4 text-white">Navigation</h5>
+              <div class="row">
+                <div class="col-6">
+                  <ul class="nav flex-column text-primary-hover">
+                    <li class="nav-item"><a class="nav-link pt-0" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documentations.html">Documentations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News and update</a></li>
+                    <li class="nav-item"><a class="nav-link" href="codes.html">Code</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact us</a></li>
+                  </ul>
+                </div>
+                 <div class="col-6">
+                  <ul class="nav flex-column text-primary-hover">
+                    <li class="nav-item"><a class="nav-link pt-0" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Career <span class="badge bg-danger ms-2">2 Job</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Startups</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gadgets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inspiration</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Footer Widget -->
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <h5 class="mb-4 text-white">Get Regular Updates</h5>
+              <ul class="nav flex-column text-primary-hover">
+                <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-whatsapp fa-fw me-2"></i>WhatsApp</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-youtube fa-fw me-2"></i>YouTube</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-bell fa-fw me-2"></i>Website Notifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-envelope fa-fw me-2"></i>Newsletters</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-headphones-alt fa-fw me-2"></i>Podcasts</a></li>
+              </ul>
+            </div>
+      
+            <!-- Footer Widget -->
+            <div class="col-sm-6 col-lg-3 mb-4">
+              <h5 class="mb-4 text-white">Our mobile App</h5>
+              <p class="text-muted">Download our App and get the latest Breaking News Alerts and latest headlines and daily articles near you.</p>
+              <div class="row g-2">
+                <div class="col">
+                  <a href="#"><img class="w-100" src="assets/images/app-store.svg" alt="app-store"></a>
+                </div>
+                <div class="col">
+                  <a href="#"><img class="w-100" src="assets/images/google-play.svg" alt="google-play"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Widgets END -->
+      
+        </div>
+      
+        <!-- Footer copyright START -->
+        <div class="bg-dark-overlay-3 mt-5">
+          <div class="container">
+            <div class="row align-items-center justify-content-md-between py-4">
+              <div class="col-md-6">
+                <!-- Copyright -->
+                <div class="text-center text-md-start text-primary-hover text-muted">©2021 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
+                </div>
+              </div>
+              <div class="col-md-6 d-sm-flex align-items-center justify-content-center justify-content-md-end">
+                <!-- Language switcher -->
+                <div class="dropup me-0 me-sm-3 mt-3 mt-md-0 text-center text-sm-end">
+                  <a class="dropdown-toggle text-primary-hover" href="#" role="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+                    English Edition
+                  </a>
+                  <ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">German </a></li>
+                 `   <li><a class="dropdown-item" href="#">French</a></li>
+                  </ul>
+                </div>
+                <!-- Links -->
+                <ul class="nav text-primary-hover text-center text-sm-end justify-content-center justify-content-center mt-3 mt-md-0">
+                  <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+                  <li class="nav-item"><a class="nav-link pe-0" href="#">Cookies</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="javascript/all.js"></script>
+</body>
+</html>

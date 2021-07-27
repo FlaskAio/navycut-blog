@@ -1,0 +1,61 @@
+/* Navigation Bar */
+#navbar{
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+#navbar ul li{
+    padding: 0px 10px;
+}
+/* Below nav bar making */
+#mid::before{
+    height: 529px;
+    width: 100%;
+    left: 0px;
+}
+#mid h1{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 192px;
+    margin-bottom:33px;
+    width: 260px;
+    margin-left: 21px;
+}
+#mid h1:hover{
+    width: 288px;
+    cursor: pointer;
+    color: rgb(230, 235, 233);
+    font-size: 1.6rem;
+    
+    height: 50px;
+    
+}
+#mid{
+    padding: 20px 161px;
+    margin-top: -184px;
+    height: 542px;
+}
+
+#mid div{
+    font-size: 0.9rem;
+   width: 300px;
+   margin-left: 30px;
+}
+#btn{
+     font-size: 0.9rem;
+     margin: 14px 0px;
+     width: 120px;
+}
+#mid button:hover{
+    height: 50px;
+        width: 130px;
+        font-size: 1.1rem;
+       padding: 5px;
+        cursor: pointer;
+
+}
+
+/* Ready part */
+.readyhead{
+    font-size: 1.5rem;
+    text-align: center;
+}
